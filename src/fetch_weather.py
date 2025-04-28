@@ -26,7 +26,7 @@ if response.status_code == 200:
     }
 
     # --- Save to CSV ---
-    output_file = '../data/weather_data.csv'
+    output_file = 'data/weather_data.csv'
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
     df = pd.DataFrame([weather])
